@@ -21,7 +21,7 @@ BuildRequires:	perl(Filter::Util::Call) >= 1.04
 BuildRequires:	perl-Crypt-CapnMidNite >= 1.00
 BuildRequires:	perl-Crypt-C_LockTite >= 1.00
 %endif
-BuildRequires:	perl-devel >= 5.8.0
+BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
