@@ -1,6 +1,7 @@
 #
 # Conditional build:
-# _without_tests - do not perform "make test"
+%bcond_with	tests	# Do not perform "make test"
+			# won't succeed in timezone other than author's
 #
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Crypt
@@ -15,9 +16,11 @@ Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	2ef372c947502f94f7c42edef567104d
 # perl-modules or perl-Filter
-%{!?_without_tests:BuildRequires:	perl(Filter::Util::Call) >= 1.04}
-%{!?_without_tests:BuildRequires:	perl-Crypt-CapnMidNite >= 1.00}
-%{!?_without_tests:BuildRequires:	perl-Crypt-C_LockTite >= 1.00}
+%if %{with tests}
+BuildRequires:	perl(Filter::Util::Call) >= 1.04
+BuildRequires:	perl-Crypt-CapnMidNite >= 1.00
+BuildRequires:	perl-Crypt-C_LockTite >= 1.00
+%endif
 BuildRequires:	perl-devel >= 5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
@@ -58,7 +61,7 @@ Apache-AuthCookie.
 %{__make}
 
 # bleh, won't succeed in timezone other than author's
-#%{!?_without_tests:%{__make} test}
+%{?_with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
