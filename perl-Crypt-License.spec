@@ -10,7 +10,7 @@ Summary:	Crypt::License - Perl extension to examine a license file
 Summary(pl):	Crypt::License - rozszerzenie Perla do kontrolowania pliku licencji
 Name:		perl-Crypt-License
 Version:	2.02
-Release:	1
+Release:	2
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -23,8 +23,11 @@ BuildRequires:	perl-Crypt-C_LockTite >= 1.00
 %endif
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
+Requires:	perl-Crypt-CapnMidNite >= 1.00
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+
+%define		_noautoreqdep	'perl(Filter::Util::Call)'
 
 %description
 This module set provides tools to effectively obfuscate Perl source
