@@ -61,7 +61,7 @@ Apache-AuthCookie.
 %{__make}
 
 # bleh, won't succeed in timezone other than author's
-%{?_with_tests:%{__make} test}
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
