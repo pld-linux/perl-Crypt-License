@@ -4,8 +4,8 @@
 			# won't succeed in timezone other than author's
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Crypt
-%define	pnam	License
+%define		pdir	Crypt
+%define		pnam	License
 Summary:	Crypt::License - Perl extension to examine a license file
 Summary(pl):	Crypt::License - rozszerzenie Perla do kontrolowania pliku licencji
 Name:		perl-Crypt-License
