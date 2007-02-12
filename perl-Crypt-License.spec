@@ -7,7 +7,7 @@
 %define		pdir	Crypt
 %define		pnam	License
 Summary:	Crypt::License - Perl extension to examine a license file
-Summary(pl):	Crypt::License - rozszerzenie Perla do kontrolowania pliku licencji
+Summary(pl.UTF-8):   Crypt::License - rozszerzenie Perla do kontrolowania pliku licencji
 Name:		perl-Crypt-License
 Version:	2.03
 Release:	1
@@ -41,17 +41,17 @@ notification of License expiration and indirect use of the encrypted
 modules by other standard modules that may reside on the system. i.e.
 sub-process calls by Apache-AuthCookie while not in user space.
 
-%description -l pl
-Ten zestaw modu³ów udostêpnia narzêdzia do skutecznego ukrycia kodu
-¼ród³owego w Perlu i pozwalania na dekodowanie oraz wykonywanie go w
-zale¿no¶ci od hosta, u¿ytkownika, daty wyga¶niêcia i innych
-parametrów. Co wiêcej, wykonywanie mo¿na ograniczyæ na podstawie
-klucza globalnego dla systemu lub unikalnego dla ka¿dego u¿ytkownika.
+%description -l pl.UTF-8
+Ten zestaw moduÅ‚Ã³w udostÄ™pnia narzÄ™dzia do skutecznego ukrycia kodu
+ÅºrÃ³dÅ‚owego w Perlu i pozwalania na dekodowanie oraz wykonywanie go w
+zaleÅ¼noÅ›ci od hosta, uÅ¼ytkownika, daty wygaÅ›niÄ™cia i innych
+parametrÃ³w. Co wiÄ™cej, wykonywanie moÅ¼na ograniczyÄ‡ na podstawie
+klucza globalnego dla systemu lub unikalnego dla kaÅ¼dego uÅ¼ytkownika.
 
-Ponadto pakiet zawiera zbiór narzêdzi daj±cych powiadomienia poczt±
-elektroniczn± o wygasaniu licencji oraz niebezpo¶rednie u¿ywanie
-zaszyfrowanych modu³ów przez inne standardowe modu³y, które mog±
-istnieæ w systemie, jak wywo³ania z podprocesów przez
+Ponadto pakiet zawiera zbiÃ³r narzÄ™dzi dajÄ…cych powiadomienia pocztÄ…
+elektronicznÄ… o wygasaniu licencji oraz niebezpoÅ›rednie uÅ¼ywanie
+zaszyfrowanych moduÅ‚Ã³w przez inne standardowe moduÅ‚y, ktÃ³re mogÄ…
+istnieÄ‡ w systemie, jak wywoÅ‚ania z podprocesÃ³w przez
 Apache-AuthCookie.
 
 %prep
