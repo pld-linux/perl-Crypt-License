@@ -7,7 +7,7 @@
 %define		pdir	Crypt
 %define		pnam	License
 Summary:	Crypt::License - Perl extension to examine a license file
-Summary(pl.UTF-8):   Crypt::License - rozszerzenie Perla do kontrolowania pliku licencji
+Summary(pl.UTF-8):	Crypt::License - rozszerzenie Perla do kontrolowania pliku licencji
 Name:		perl-Crypt-License
 Version:	2.03
 Release:	1
